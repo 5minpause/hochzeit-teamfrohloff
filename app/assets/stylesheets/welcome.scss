@@ -1,61 +1,60 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 img.hero-image {
-  width: 100%;
+    width: 100%;
 }
-
 .yellow-background {
-  background: $color-dark-yellow;
-  color: $color-dark-blue;
+    background: $color-dark-yellow;
+    color: $color-dark-blue;
 }
-
 .blue-background {
-  background: $color-dark-blue;
-  color: $color-dark-yellow;
+    background: $color-dark-blue;
+    color: $color-dark-yellow;
 }
-
 .background {
-  min-height: 700px;
-  padding-top: 3em;
-
-  .center {
-    text-align: center;
-  }
-  .left {
-    text-align: left;
-  }
-
-  span.text {
-    display: block;
-  }
-
-  span.glyphicon {
-    display: inline;
-  }
+    min-height: 700px;
+    padding-top: 3em;
+    .center {
+        text-align: center;
+    }
+    .left {
+        text-align: left;
+    }
+    span.text {
+        display: block;
+    }
+    span.glyphicon {
+        display: inline;
+    }
 }
-
+.margin-top-5 {
+    margin-top: 5em;
+}
 .margin-top-10 {
-  margin-top: 10em;
+    margin-top: 10em;
 }
-
 .large {
-  font-size: 3em;
+    font-size: 3em;
 }
-
 .normal {
-  font-size: 2em;
+    font-size: 2em;
 }
-
 .small {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
-
 p {
-  padding: 1em;
+    padding: 1em;
 }
-
 .glyphicon {
-  display: inline;
+    display: inline;
+}
+.arced {
+  margin-bottom: 0.5em;
+}
+.input-group {
+  margin-bottom: 0.2em;
+}
+.input-group-addon {
+  min-width: 150px;
 }
