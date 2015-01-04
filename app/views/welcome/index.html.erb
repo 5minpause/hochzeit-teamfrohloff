@@ -20,31 +20,36 @@
   <%= image_tag "/system/images/haende.jpg", class: "hero-image" %>
 </div>
 
-<div class="row blue-background background">
+<div class="row yellow-background background">
   <div class="col-md-8 col-md-offset-2">
     <h2 class="tk-adelle text-left">Juliane & Holger</h2>
 
-    <div class="col-md-12 yellow-background">
-      <p class="tk-adelle small">Es war der 21.06.2007, Fête de la musique in Berlin.</p>
+    <div class="col-md-12">
+      <p class="tk-adelle small">Am 21. Juni 2007 lernten sich Juliane und Holger auf der Fête de la musique in Berlin kennen. Im Januar 2008 zogen sie bereits in ihre erste gemeinsame Wohnung. Es folgten harmonische Urlaube und viele schöne Momente. Am 10. März 2012 wurde die Frage von Holger an Juliane nach viel Lachen auch mit einem „Ja“ beantwortet.<br /><br />
+      Bis zum 10. Oktober 2015 verbanden sie sowohl die Geburt ihrer wunderbaren Tochter Alba Lea, und der Umzug in eine neue Wohnung, als auch viele weitere besondere Momente.<br /><br />
+      Der 10. Oktober 2015 wird ein weiterer erinnerungsreicher und wichtiger Tag in ihrem gemeinsamen Leben.</p>
     </div>
   </div>
 </div>
 
-<div class="row yellow-background background">
+<div class="row blue-background background small-bg">
   <div class="col-md-6 col-md-offset-3">
     <h2 class="tk-adelle text-center">Eure Zusage</h2>
 
-    <div class="input-group col-md-12">
-      <span class="input-group-addon tk-adelle" id="basic-addon1">Dein Name</span>
-      <input type="text" class="form-control tk-adelle" placeholder="Dein Name" aria-describedby="basic-addon1">
-    </div>
-    <div class="input-group">
-      <span class="input-group-addon tk-adelle" id="basic-addon2">Anzahl G&auml;ste</span>
-      <input type="number" class="form-control tk-adelle" placeholder="(insgesamt)" aria-describedby="basic-addon2">
-    </div>
-    <div class="input-group">
-      <input type="submit" class="form-control tk-adelle" placeholder="Gib uns Bescheid" aria-describedby="basic-addon2">
-    </div>
+      <%= form_tag("/register_guests", remote: true, authenticity_token: false, class: "form", id: "register_for_wedding") do -%>
+        <div class="input-group col-md-12">
+          <span class="input-group-addon tk-adelle" id="basic-addon1">Name</span>
+          <input type="text" class="form-control tk-adelle" placeholder="Eure Namen" aria-describedby="basic-addon1" name="guest[name]">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon tk-adelle" id="basic-addon2">Anzahl G&auml;ste</span>
+          <input type="number" class="form-control tk-adelle" placeholder="(insgesamt)" aria-describedby="basic-addon2" name="guest[number]">
+        </div>
+        <div class="input-group">
+          <%= submit_tag 'Gebt uns Bescheid', class: "form-control tk-adelle" %>
+        </div>
+      <% end -%>
+
   </div>
 </div>
 

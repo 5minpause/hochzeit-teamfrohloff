@@ -13,8 +13,9 @@ img.hero-image {
     color: $color-dark-yellow;
 }
 .background {
-    min-height: 700px;
+    // min-height: 700px;
     padding-top: 3em;
+    padding-bottom: 3em;
     .center {
         text-align: center;
     }
@@ -26,6 +27,10 @@ img.hero-image {
     }
     span.glyphicon {
         display: inline;
+    }
+    &.small-bg {
+        min-height: 300px;
+        height: 300px;
     }
 }
 .margin-top-5 {
