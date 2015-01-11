@@ -10,8 +10,8 @@ require 'mina/rbenv'  # for rbenv support. (http://rbenv.org)
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :domain, 'crux.uberspace.de'
-set :deploy_to, '/home/gumpy/html/teamfrohloff'
+set :domain, 'monoceres.uberspace.de'
+set :deploy_to, '/home/charly/html/teamfrohloff'
 set :repository, 'git@github.com:5minpause/hochzeit-teamfrohloff.git'
 set :branch, 'master'
 
@@ -23,7 +23,7 @@ set :branch, 'master'
 set :shared_paths, ['config/database.yml', 'log']
 
 # Optional settings:
-set :user, 'gumpy'    # Username in the server to SSH to.
+set :user, 'charly'    # Username in the server to SSH to.
 #   set :port, '30000'     # SSH port number.
 #   set :forward_agent, true     # SSH forward_agent.
 
